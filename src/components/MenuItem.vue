@@ -12,11 +12,7 @@
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
 
-@Component({
-    components: {
-        MenuItem,
-    }
-})
+@Component
 export default class MenuItem extends Vue {
     @Prop() readonly name!: string
     @Prop() readonly childrens!: Array<object>
